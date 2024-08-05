@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tableless</title>
+	<meta charset="utf-8">
+	<!--- Incorporação do arquivo CSS do Site -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--- Incorporação do arquivo CSS do plugin BXSlider-->
+	<link rel="stylesheet" type="text/css" href="bxslider/jquery.bxslider.css">
+	<!--- Incorporação da biblioteca Jquery-->
+	<script type="text/javascript" src="bxslider/jquery.js"></script>
+	<!--- Incorporação do arquivo JS do plugin BXSlider-->
+	<script type="text/javascript" src="bxslider/jquery.bxslider.js"></script>
+
+	<script type="text/javascript">
+			$(document).ready(function(){
+			  $('#banners').bxSlider({
+			    //mode: 'fade',
+			    auto: true,
+			    autoHover: true,
+			    autoControls: false,
+			    controls: false
+				});
+			});
+	</script>
+</head>
+<body>
+	<main id="geral">
+		<header id="cabecalho">
+			<img src="imagens/layout/logo.png" alt="Tableless">
+			<nav id="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Sobre</a></li>
+					<li><a href="#">Produtos</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Suporte</a></li>
+					<li><a href="#">Palestras</a>
+						<ul>
+							<li><a href="#">Vídeos</a></li>
+							<li><a href="#">Contratação</a></li>
+							<li><a href="#">Parceiros</a></li>
+							<li><a href="#">Eventos</a></li>
+						</ul>
+					</li>	
+					<li><a href="#">Workshops</a></li>
+					<li><a href="#">Contato</a></li>
+				</ul>
+			</nav> 
+		</header>
+		<section id="banners-topo">
+			<ul id="banners">
+				<li><img src="imagens/banners/imagem_01.jpg"></li>
+				<li><img src="imagens/banners/imagem_02.jpg"></li>
+				<li><img src="imagens/banners/imagem_03.jpg"></li>
+			</ul>
+		</section>
+
+		<section id="corpo">
+			<div id="conteudo">
+			<section id="destaques">
+				<h1>Artigos</h1>
+				<div>
+					<a href="#">
+						<img src="imagens/layout/img01.jpg">
+						<h2>Dicas sobre Design Responsivo </h2>
+					</a>					
+					<a href="#">
+						<img src="imagens/layout/img02.jpg">
+						<h2>Design, usabilidade e bem estar social! </h2>
+					</a>
+					<a href="#">
+						<img src="imagens/layout/img03.jpg">
+						<h2>Conheça o guia da Google para desenvolvimento </h2>
+					</a>
+				</div>		
+			</section>	
+			<section id="sobre">
+				<h1>Padrões Web – O que são?</h1>
+
+				<p>Os Padrões Web são recomendações do W3C (World Wide Web Consortium), as quais são destinadas a orientar os desenvolvedores para o uso de boas práticas que tornam a web acessível para todos. Através desses padrões, o W3C tem como objetivo criar uma plataforma aberta da Web, para o desenvolvimento de aplicações que possuam um potencial sem precedentes, permitindo assim que os desenvolvedores criem experiências ricas, alimentadas por um vasto armazenamento de dados, os quais estão disponíveis para qualquer dispositivo.</p>
+			</section>
+		</div>
+			<aside id="informacoes">
+				<h1>Links Importantes</h1>
+				<ul>
+					<li><a href="#">Guia de investimentos</a></li>
+					<li><a href="#">Tecnologia do futuro</a></li>
+					<li><a href="#">Agilidade no investimento</a></li>
+					<li><a href="#">Sempre ensinamos os melhores</a></li>
+					<li><a href="#">Vida após tabelas</a></li>
+					<li><a href="#">Guia de investimentos</a></li>
+					<li><a href="#">Tecnologia do futuro</a></li>
+					<li><a href="#">Agilidade no investimento</a></li>
+					<li><a href="#">Sempre ensinamos os melhores</a></li>
+					<li><a href="#">Vida após tabelas</a></li>
+				</ul>
+			</aside>
+			</section>
+			<footer id="rodape">
+				<img src="imagens/layout/logo-footer.png" alt="Tableless">
+				<div>
+					<span id="telefone">(75) 3501 0773</span>
+					<address id="endereco">
+						Alameda das Gaivotas, 453, São Paulo
+					</address>
+				</div>
+			</footer>
+	</main>
+</body>
+</html>
